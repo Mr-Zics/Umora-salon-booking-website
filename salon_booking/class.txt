@@ -1,0 +1,135 @@
+1️⃣ Home Page
+
+Hero Section (top of the page)
+
+Where in HTML: <section id="hero"> or a hero div
+
+Media: Big banner image or video showing your brand, service, or salon
+
+Type: JPG/PNG image or MP4/WebM video
+
+Size hint: Full width, e.g., 1920x1080 px
+
+Why: This is the first thing visitors see — should look attractive and professional
+
+Testimonials Slider
+
+Where in HTML: .testimonial-slider → each .testimonial-item
+
+Media: Client photos or icons
+
+Type: Small JPG/PNG portraits (optional: short video testimonials)
+
+Size hint: 100x100 px (square)
+
+Why: Shows real clients’ faces to build trust
+
+2️⃣ Booking Page
+
+Service Options
+
+Where in HTML: Inside the form, with checkboxes for services
+
+Media: Small icons or images for each service (e.g., haircut, manicure)
+
+Type: PNG/JPG icons
+
+Size hint: 80x80 px
+
+Why: Helps users quickly see what each service is
+
+Staff Selection
+
+Where in HTML: <select id="staffPreference"> dropdown
+
+Media: Staff headshots (optional thumbnail)
+
+Type: PNG/JPG portraits
+
+Size hint: 100x100 px
+
+Why: Shows who will provide the service
+
+Booking Confirmation
+
+Where in HTML: <div id="bookingConfirmation">
+
+Media: Thank you illustration, GIF, or small animation
+
+Type: PNG/GIF/video
+
+Size hint: Flexible; must fit in confirmation box
+
+Why: Gives users visual feedback that booking was successful
+
+3️⃣ Contact Page
+
+Contact Hero / Background
+
+Where in HTML: <section id="contact">
+
+Media: Office photo, background image, or map image
+
+Type: JPG/PNG
+
+Size hint: Full width, e.g., 1920x1080 px
+
+Why: Makes the contact section visually appealing
+
+Form Messages
+
+Where in HTML: <div id="formMessage">
+
+Media: Small icon for success or error (optional)
+
+Type: PNG/SVG
+
+Size hint: 20x20 px
+
+Why: Visually reinforces success/error message
+
+4️⃣ About Page / Team Section (Optional)
+
+Team Photos / Office Images
+
+Where in HTML: Any <section> for team or office
+
+Media: Portraits of team, office, or service images
+
+Type: PNG/JPG (video optional)
+
+Size hint: Portraits: 200x200 px, Banners: 1920x1080 px
+
+Why: Introduces your team and workspace
+
+5️⃣ General Media for All Pages
+
+Logo
+
+Where in HTML: <img class="logo"> in header
+
+Type: PNG (transparent) or SVG
+
+Size hint: 150x50 px
+
+Why: Branding, appears on every page
+
+Favicon
+
+Where in HTML: <link rel="icon" href="favicon.ico">
+
+Type: ICO or PNG
+
+Size hint: 32x32 px
+
+Why: Shows in browser tab
+
+Footer Social Icons
+
+Where in HTML: <footer> → <a><img class="social-icon"></a>
+
+Type: PNG/SVG of social media logos
+
+Size hint: 32x32 px
+
+Why: Links to your social media profiles

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us | Umora Salon Beauty & Spa</title>
+
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header>
+    <div class="container">
+
+        <div class="logo">
+            <a href="index.html">Umora Salon Beauty & Spa</a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="book.html">Book Online</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Mobile Menu Toggle -->
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+
+    </div>
+</header>
+
+<!-- ================= MAIN CONTENT ================= -->
+<main>
+
+    <!-- ===== CONTACT HERO ===== -->
+    <section id="page-hero" class="contact-hero">
+        <!-- 
+            OPTIONAL BACKGROUND IMAGE / VIDEO
+            Class: contact-hero
+            Suggested image: Reception desk with warm lighting
+            Suggested video: Calm spa entrance ambience (muted, looped)
+        -->
+        <div class="container">
+            <h1>Get in Touch</h1>
+            <p>
+                Have questions, feedback, or want to book an appointment?
+                We’re always happy to hear from you.
+            </p>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT INFO CARDS ===== -->
+    <section id="contact-details" class="section-padding">
+        <div class="container">
+
+            <div class="contact-grid">
+
+                <!-- Location -->
+                <div class="contact-info-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Our Location</h3>
+                    <p>
+                        8 Transwoji Road, Elelenwo,<br>
+                        Port Harcourt, Rivers State,<br>
+                        Nigeria
+                    </p>
+
+                    <!-- Replace link with exact Google Maps location later -->
+                    <a href="#" class="btn btn-secondary">
+                        Get Directions
+                    </a>
+                </div>
+
+                <!-- Phone -->
+                <div class="contact-info-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>Call Us</h3>
+                    <p>Speak directly with our team for bookings and inquiries.</p>
+                    <p>
+                        <a href="tel:+2348164559290">
+                            +234 816 455 9290
+                        </a>
+                    </p>
+                </div>
+
+                <!-- Email -->
+                <div class="contact-info-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email Us</h3>
+                    <p>Send us a message and we’ll respond promptly.</p>
+                    <p>
+                        <a href="mailto:isaacumoh748@gmail.com">
+                            isaacumoh748@gmail.com
+                        </a>
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== CONTACT FORM ===== -->
+    <section id="contact-form-section" class="section-padding bg-light">
+        <div class="container">
+
+            <h2>Send Us a Message</h2>
+
+            <form id="contactForm" class="contact-form">
+
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="6" class="form-control" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">
+                    Send Message
+                </button>
+
+                <!-- Success / Error message handled by contact.js -->
+                <div id="formMessage" class="form-message"></div>
+
+            </form>
+
+        </div>
+    </section>
+
+    <!-- ===== BUSINESS HOURS ===== -->
+    <section id="our-hours" class="section-padding">
+        <div class="container text-center">
+
+            <h2>Business Hours</h2>
+
+            <div class="hours-table">
+                <table>
+                    <tr><td>Monday</td><td>9:00 AM – 7:00 PM</td></tr>
+                    <tr><td>Tuesday</td><td>9:00 AM – 7:00 PM</td></tr>
+                    <tr><td>Wednesday</td><td>9:00 AM – 7:00 PM</td></tr>
+                    <tr><td>Thursday</td><td>9:00 AM – 8:00 PM</td></tr>
+                    <tr><td>Friday</td><td>9:00 AM – 8:00 PM</td></tr>
+                    <tr><td>Saturday</td><td>10:00 AM – 6:00 PM</td></tr>
+                    <tr><td>Sunday</td><td>Closed</td></tr>
+                </table>
+            </div>
+
+            <p class="note">
+                Walk-ins are welcome, but appointments are highly recommended.
+            </p>
+
+        </div>
+    </section>
+
+    <!-- ===== MAP SECTION ===== -->
+    <section id="location-map" class="section-padding no-padding-top">
+        <div class="container">
+
+            <h2>Find Us on the Map</h2>
+
+            <div class="map-container">
+                <!-- 
+                    MAP STYLING HOOK:
+                    Class: map-container
+                    Replace iframe src with Google Maps embed
+                    pointing to Elelenwo, Port Harcourt
+                -->
+                <iframe
+                    src=""
+                    width="100%"
+                    height="450"
+                    style="border:0;"
+                    loading="lazy"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div class="footer-about">
+                <h3>Umora Salon Beauty & Spa</h3>
+                <p>Beauty, wellness, and relaxation tailored just for you.</p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="book.html">Book Online</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 8 Transwoji Road, Elelenwo, Port Harcourt, Rivers State</p>
+                <p><i class="fas fa-phone"></i> +234 816 455 9290</p>
+                <p><i class="fas fa-envelope"></i> isaacumoh748@gmail.com</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Umora Salon Beauty & Spa. All rights reserved.</p>
+        </div>
+
+    </div>
+</footer>
+
+<!-- ================= SCRIPTS ================= -->
+<script src="js/script.js"></script>
+<script src="js/contact.js"></script>
+
+</body>
+</html>

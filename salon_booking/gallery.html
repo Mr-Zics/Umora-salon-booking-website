@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Aurora Salon & Spa</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">Aurora Salon & Spa</a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="booking.html" class="btn btn-primary">Book Now</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero" style="background-image: url('https://via.placeholder.com/1500x400/5d8272/ffffff?text=Our+Gallery');">
+            <div class="container">
+                <h1>Our Transformations</h1>
+            </div>
+        </section>
+
+        <section class="gallery-full section-padding container">
+            <h2 class="text-center">A Glimpse of Our Artistry</h2>
+            <p class="text-center lead">Explore some of our favorite creations across hair, nails, and skincare. Get inspired for your next visit!</p>
+
+            <div class="filter-buttons">
+                <button class="btn btn-secondary active" data-filter="all">All</button>
+                <button class="btn btn-secondary" data-filter="hair">Hair</button>
+                <button class="btn btn-secondary" data-filter="nails">Nails</button>
+                <button class="btn btn-secondary" data-filter="facials">Facials</button>
+            </div>
+
+            <div class="gallery-grid">
+                <img src="https://via.placeholder.com/400x300?text=Hairstyle+1" alt="Hairstyle example 1" data-category="hair">
+                <img src="https://via.placeholder.com/400x300?text=Nail+Art+1" alt="Nail Art example 1" data-category="nails">
+                <img src="https://via.placeholder.com/400x300?text=Facial+Result+1" alt="Facial Result example 1" data-category="facials">
+                <img src="https://via.placeholder.com/400x300?text=Hairstyle+2" alt="Hairstyle example 2" data-category="hair">
+                <img src="https://via.placeholder.com/400x300?text=Nail+Art+2" alt="Nail Art example 2" data-category="nails">
+                <img src="https://via.placeholder.com/400x300?text=Hairstyle+3" alt="Hairstyle example 3" data-category="hair">
+                <img src="https://via.placeholder.com/400x300?text=Facial+Result+2" alt="Facial Result example 2" data-category="facials">
+                <img src="https://via.placeholder.com/400x300?text=Nail+Art+3" alt="Nail Art example 3" data-category="nails">
+                <img src="https://via.placeholder.com/400x300?text=Hairstyle+4" alt="Hairstyle example 4" data-category="hair">
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2023 Aurora Salon & Spa. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Simple Gallery Filtering (can be expanded)
+        document.addEventListener('DOMContentLoaded', () => {
+            const filterButtons = document.querySelectorAll('.filter-buttons .btn');
+            const galleryItems = document.querySelectorAll('.gallery-grid img');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    button.classList.add('active');
+
+                    const filter = button.dataset.filter;
+
+                    galleryItems.forEach(item => {
+                        if (filter === 'all' || item.dataset.category === filter) {
+                            item.style.display = 'block'; // Show item
+                        } else {
+                            item.style.display = 'none'; // Hide item
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Book Appointment | Umora Salon Beauty & Spa</title>
+
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Flatpickr Date & Time Picker -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header>
+    <div class="container">
+
+        <div class="logo">
+            <a href="index.html">Umora Salon Beauty & Spa</a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="book.html" class="active">Book Online</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Mobile Menu Icon -->
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+
+    </div>
+</header>
+
+<!-- ================= MAIN CONTENT ================= -->
+<main>
+
+    <!-- ===== BOOKING HERO ===== -->
+    <section id="page-hero" class="booking-hero">
+        <!-- 
+            OPTIONAL IMAGE / VIDEO:
+            Class: booking-hero
+            Suggested image: Calm spa interior with warm lighting
+            Suggested video: Short slow-motion spa ambience (muted, looped)
+        -->
+        <div class="container">
+            <h1>Book Your Appointment</h1>
+            <p>
+                Select your preferred services, date, and time.
+                We’ll take care of the rest.
+            </p>
+        </div>
+    </section>
+
+    <!-- ===== BOOKING FORM SECTION ===== -->
+    <section id="booking-form-section" class="section-padding">
+        <div class="container">
+
+            <form id="bookingForm" class="booking-form">
+
+                <!-- ================= STEP 1 ================= -->
+                <div class="form-step active" id="step1">
+                    <h2>Step 1: Choose Your Services</h2>
+
+                    <div class="service-selection-grid">
+
+                        <!-- Hair Care -->
+                        <div class="service-category-booking">
+                            <h3>Hair Care</h3>
+                            <label><input type="checkbox" name="service" value="Women's Haircut & Styling" data-price="60"> Women's Haircut & Styling ($60)</label>
+                            <label><input type="checkbox" name="service" value="Men's Haircut" data-price="40"> Men's Haircut ($40)</label>
+                            <label><input type="checkbox" name="service" value="Hair Coloring" data-price="120"> Hair Coloring ($120)</label>
+                            <label><input type="checkbox" name="service" value="Balayage / Highlights" data-price="150"> Balayage / Highlights ($150)</label>
+                            <label><input type="checkbox" name="service" value="Deep Conditioning Treatment" data-price="45"> Deep Conditioning Treatment ($45)</label>
+                        </div>
+
+                        <!-- Nail Care -->
+                        <div class="service-category-booking">
+                            <h3>Nail Care</h3>
+                            <label><input type="checkbox" name="service" value="Classic Manicure" data-price="35"> Classic Manicure ($35)</label>
+                            <label><input type="checkbox" name="service" value="Spa Pedicure" data-price="55"> Spa Pedicure ($55)</label>
+                            <label><input type="checkbox" name="service" value="Gel Manicure" data-price="50"> Gel Manicure ($50)</label>
+                        </div>
+
+                        <!-- Facial Treatments -->
+                        <div class="service-category-booking">
+                            <h3>Facial Treatments</h3>
+                            <label><input type="checkbox" name="service" value="Signature Facial" data-price="90"> Signature Facial ($90)</label>
+                            <label><input type="checkbox" name="service" value="Anti-Aging Facial" data-price="120"> Anti-Aging Facial ($120)</label>
+                            <label><input type="checkbox" name="service" value="Acne Treatment Facial" data-price="100"> Acne Treatment Facial ($100)</label>
+                        </div>
+
+                        <!-- Massage Therapy -->
+                        <div class="service-category-booking">
+                            <h3>Massage Therapy</h3>
+                            <label><input type="checkbox" name="service" value="Swedish Massage (60 mins)" data-price="100"> Swedish Massage (60 mins) ($100)</label>
+                            <label><input type="checkbox" name="service" value="Deep Tissue Massage (60 mins)" data-price="110"> Deep Tissue Massage (60 mins) ($110)</label>
+                        </div>
+
+                        <!-- Waxing -->
+                        <div class="service-category-booking">
+                            <h3>Waxing</h3>
+                            <label><input type="checkbox" name="service" value="Eyebrow Wax" data-price="20"> Eyebrow Wax ($20)</label>
+                            <label><input type="checkbox" name="service" value="Full Leg Wax" data-price="70"> Full Leg Wax ($70)</label>
+                        </div>
+
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-primary" id="nextStep1">Next</button>
+                    </div>
+                </div>
+
+                <!-- ================= STEP 2 ================= -->
+                <div class="form-step" id="step2">
+                    <h2>Step 2: Select Date & Time</h2>
+
+                    <div class="form-group">
+                        <label for="bookingDate">Preferred Date</label>
+                        <input type="text" id="bookingDate" class="form-control" placeholder="Select a date" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bookingTime">Preferred Time</label>
+                        <input type="text" id="bookingTime" class="form-control" placeholder="Select a time" required>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-secondary" id="prevStep2">Previous</button>
+                        <button type="button" class="btn btn-primary" id="nextStep2">Next</button>
+                    </div>
+                </div>
+
+                <!-- ================= STEP 3 ================= -->
+                <div class="form-step" id="step3">
+                    <h2>Step 3: Your Details</h2>
+
+                    <div class="form-group">
+                        <label for="clientName">Full Name</label>
+                        <input type="text" id="clientName" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="clientEmail">Email Address</label>
+                        <input type="email" id="clientEmail" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="clientPhone">Phone Number</label>
+                        <input type="tel" id="clientPhone" class="form-control" placeholder="+234..." required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="staffPreference">Preferred Staff (Optional)</label>
+                        <select id="staffPreference" class="form-control">
+                            <option value="">No Preference</option>
+                            <option value="Sarah">Sarah – Hair Stylist</option>
+                            <option value="David">David – Massage Therapist</option>
+                            <option value="Jessica">Jessica – Nail Technician</option>
+                            <option value="Emily">Emily – Esthetician</option>
+                        </select>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-secondary" id="prevStep3">Previous</button>
+                        <button type="button" class="btn btn-primary" id="nextStep3">Review Booking</button>
+                    </div>
+                </div>
+
+                <!-- ================= STEP 4 ================= -->
+                <div class="form-step" id="step4">
+                    <h2>Step 4: Review & Confirm</h2>
+
+                    <div class="booking-summary">
+                        <h3>Selected Services</h3>
+                        <ul id="summaryServices"></ul>
+
+                        <p><strong>Total Price:</strong> <span id="summaryTotalPrice">$0</span></p>
+
+                        <h3>Appointment Details</h3>
+                        <p><strong>Date:</strong> <span id="summaryDate"></span></p>
+                        <p><strong>Time:</strong> <span id="summaryTime"></span></p>
+                        <p><strong>Preferred Staff:</strong> <span id="summaryStaff"></span></p>
+
+                        <h3>Your Information</h3>
+                        <p><strong>Name:</strong> <span id="summaryName"></span></p>
+                        <p><strong>Email:</strong> <span id="summaryEmail"></span></p>
+                        <p><strong>Phone:</strong> <span id="summaryPhone"></span></p>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-secondary" id="prevStep4">Previous</button>
+                        <button type="submit" class="btn btn-primary">Confirm Booking</button>
+                    </div>
+                </div>
+
+            </form>
+
+            <!-- ===== CONFIRMATION MESSAGE ===== -->
+            <div id="bookingConfirmation" class="booking-confirmation" style="display: none;">
+                <h2>Booking Successful 🎉</h2>
+                <p>Your appointment at <strong>Umora Salon Beauty & Spa</strong> has been scheduled.</p>
+                <p>A confirmation message will be sent to <strong id="confirmedEmail"></strong>.</p>
+                <a href="index.html" class="btn btn-primary">Return to Home</a>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+
+            <div class="footer-about">
+                <h3>Umora Salon Beauty & Spa</h3>
+                <p>Where beauty meets relaxation and professional care.</p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="book.html">Book Online</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 8 Transwoji Road, Elelenwo, Port Harcourt, Rivers State, Nigeria</p>
+                <p><i class="fas fa-phone"></i> +234 816 455 9290</p>
+                <p><i class="fas fa-envelope"></i> isaacumoh748@gmail.com</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Umora Salon Beauty & Spa. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- ================= SCRIPTS ================= -->
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="js/script.js"></script>
+<script src="js/booking.js"></script>
+
+</body>
+</html>
