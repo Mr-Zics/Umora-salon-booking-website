@@ -49,3 +49,20 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 5000);
     }
 });
+
+
+
+
+
+        window.onload = function() {
+            document.getElementById('contactForm').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // these IDs from the previous steps
+                emailjs.sendForm("service_tbs4lmq","template_w40h3g8", this)
+                    .then(() => {
+                        alert('SUCCESS!');
+                    }, (error) => {
+                        alert('FAILED...', error);
+                    });
+            });
+        }

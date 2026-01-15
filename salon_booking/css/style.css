@@ -614,13 +614,6 @@ footer {
     display: block;
     margin-top: 15px;
 }
-.service-item-card img {
-    width: 100%;
-    height: 80px; 
-    object-fit: cover;
-    border-radius: 6px;
-    margin-bottom: 15px;
-}
 
 /* Booking Page Specific */
 .booking-form {
@@ -832,6 +825,7 @@ footer {
     display: flex;
     gap: 50px; 
     align-items: center;
+    justify-content: center;
     flex-wrap: wrap; 
 }
 
@@ -841,8 +835,12 @@ footer {
 }
 
 #our-story .content-right {
-    flex: 1;
+    flex: 1.5;
     min-width: 280px; 
+}
+#our-story .content-right img{
+    border-radius: 20px;
+    height: 100vh;
 }
 
 #our-story .img-fluid {
@@ -1338,6 +1336,14 @@ textarea {
     border-radius: 8px;
     margin-bottom: 10px;
 }
+.services-hero{
+    background-image: url(/salon_booking/images/salon\ bg3.webp);
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 /* Contact Page Images */
 .contact-info-card img {
@@ -1346,6 +1352,14 @@ textarea {
     object-fit: cover;
     border-radius: 50%;
     margin-bottom: 15px;
+}
+.contact-hero{
+    background-image: url(/salon_booking/images/contact\ us\ bg.webp);
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* Placeholder for images not yet available */
