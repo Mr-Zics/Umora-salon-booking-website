@@ -318,6 +318,12 @@ nav ul li a.active::after {
     margin-top: 40px;
 }
 
+#about-preview .container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
 .about-item {
     padding: 30px; 
     background: var(--white-color);
@@ -348,6 +354,9 @@ nav ul li a.active::after {
     font-size: 0.95em;
     color: var(--light-text-color);
 }
+.about-desc{
+    text-align: center;
+}
 
 /* Services Preview Section */
 #services-preview .services-grid {
@@ -355,6 +364,14 @@ nav ul li a.active::after {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
     gap: 30px;
     margin-top: 40px;
+}
+#services-preview .container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.service-desc{
+    text-align: center;
 }
 
 .service-card {
