@@ -207,7 +207,7 @@ nav ul li a.active::after {
 
 /* Hero Section */
 #hero {
-    background-image: url('images/hero.jpeg');
+    background-image: url('../images/pngtree-barbershop-and-mens-beauty-salon-ad-confident-bearded-hipster-receives-trendy-hairstyle-from-skilled-barber-photo-image_45950602.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1375,6 +1375,14 @@ textarea {
     background-position: center;
     width: 100%;
     height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Use the barber image for all hero variants */
+.services-hero, .booking-hero, .about-hero, .contact-hero, .gallery-hero, .service-hero {
+    background-image: url('../images/pngtree-barbershop-and-mens-beauty-salon-ad-confident-bearded-hipster-receives-trendy-hairstyle-from-skilled-barber-photo-image_45950602.jpg');
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
